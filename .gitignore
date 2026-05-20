@@ -1,0 +1,47 @@
+# ── Python ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ── Node ────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.env
+
+# ── Environment ─────────────────────────────────────
+.env
+backend/.env
+.env.local
+.env.production
+.env.development
+
+# ── IDE ─────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── Docker ──────────────────────────────────────────
+komajdon_data/
+komajdon_backups/
+
+# ── Logs ────────────────────────────────────────────
+*.log
+
+# ── Graphify ────────────────────────────────────────
+graphify-out/

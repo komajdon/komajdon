@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Copper pot body -->
+  <path d="M50 85 C50 85, 45 130, 60 155 C70 170, 130 170, 140 155 C155 130, 150 85, 150 85 Z"
+        fill="#B87333" stroke="#8B5E3C" stroke-width="2"/>
+  <!-- Copper rim -->
+  <ellipse cx="100" cy="85" rx="50" ry="12" fill="#D4944A" stroke="#8B5E3C" stroke-width="2"/>
+  <!-- Copper bottom -->
+  <ellipse cx="100" cy="158" rx="35" ry="6" fill="#8B5E3C"/>
+  <!-- Lid -->
+  <ellipse cx="100" cy="78" rx="46" ry="10" fill="#C8843E" stroke="#8B5E3C" stroke-width="2"/>
+  <path d="M64 78 C64 68, 136 68, 136 78" fill="#B87333" stroke="#8B5E3C" stroke-width="2"/>
+  <!-- Lid knob -->
+  <ellipse cx="100" cy="65" rx="8" ry="5" fill="#D4944A" stroke="#8B5E3C" stroke-width="1.5"/>
+  <rect x="97" y="60" width="6" height="5" rx="2" fill="#D4944A" stroke="#8B5E3C" stroke-width="1"/>
+  <!-- Hammered texture dots -->
+  <circle cx="75" cy="105" r="2" fill="#D4944A" opacity="0.5"/>
+  <circle cx="90" cy="115" r="2" fill="#D4944A" opacity="0.5"/>
+  <circle cx="110" cy="108" r="2" fill="#D4944A" opacity="0.5"/>
+  <circle cx="125" cy="118" r="2" fill="#D4944A" opacity="0.5"/>
+  <circle cx="85" cy="130" r="2" fill="#D4944A" opacity="0.5"/>
+  <circle cx="105" cy="135" r="2" fill="#D4944A" opacity="0.5"/>
+  <circle cx="120" cy="138" r="2" fill="#D4944A" opacity="0.5"/>
+  <circle cx="95" cy="145" r="2" fill="#D4944A" opacity="0.5"/>
+  <circle cx="70" cy="120" r="1.5" fill="#D4944A" opacity="0.4"/>
+  <circle cx="130" cy="128" r="1.5" fill="#D4944A" opacity="0.4"/>
+  <!-- Left handle -->
+  <path d="M50 95 C30 95, 20 110, 35 125 C45 135, 55 125, 55 120"
+        fill="none" stroke="#8B5E3C" stroke-width="4" stroke-linecap="round"/>
+  <!-- Steam -->
+  <path d="M85 60 C83 50, 90 45, 88 35" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M100 55 C98 45, 105 40, 103 30" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M115 58 C113 48, 120 43, 118 33" fill="none" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

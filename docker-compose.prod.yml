@@ -1,0 +1,48 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: komajdon-db
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - komajdon_data:/data/db
+      - komajdon_backups:/backups
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: komajdon-api
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file:
+      - .env
+    environment:
+      MONGODB_URL: mongodb://mongodb:27017
+      SECRET_KEY: ${SECRET_KEY:?SECRET_KEY is required}
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: komajdon-frontend
+    ports:
+      - "127.0.0.1:80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  komajdon_data:
+  komajdon_backups:
